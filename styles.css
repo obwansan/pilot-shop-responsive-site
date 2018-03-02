@@ -1,0 +1,518 @@
+* {
+     box-sizing: border-box;
+}
+
+body {
+	margin: 0;
+	font-family: "Helvetica Neue", Helvetica, sans-serif;
+}
+
+.ellipsis {
+  text-overflow: ellipsis;
+  /* Required for text-overflow to do anything */
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+/****************************
+Navbars
+/****************************/
+
+.nav-search {
+	height: 60px;
+	background-color: #E8E8E8;
+	margin: 0 auto;
+}
+
+.nav-products {
+	margin: 0 auto;
+}
+
+.upper-nav-tabs {
+	padding: 20px;
+	width: 90%;
+	margin: 0 auto;
+}
+
+.upper-nav-tabs a:hover {
+	color: #5B9EC0;
+}
+
+.lower-nav-tabs {
+	height: 100px;
+	background-color: #fff;
+	padding: 40px 30px 40px;
+	width: 90%;
+	margin: 0 auto;
+}
+
+.lower-nav-tabs .selected {
+	border: 2px solid #000;
+	padding: 10px;
+}
+
+.lower-nav-tabs a:hover {
+	border: 2px solid #000;
+	padding: 10px;
+}
+
+.float-left {
+	float: left;
+}
+
+.float-right {
+	float: right;
+}
+
+.phone-number {
+	text-decoration: none;
+	font-size: 13px;
+	font-weight: bold;
+	color: #A8A8A8;
+}
+
+.top-menu-btn {
+	text-decoration: none;
+	font-size: 13px;
+	font-weight: bold;
+	color: #A8A8A8;
+	margin-right: 10px;
+}
+
+.search-box {
+	width: 110px;
+	border: none;
+	color: #A8A8A8; /*doesn't work*/
+	background-color: #E8E8E8;
+}
+
+.brkpt-910-center {
+	display: inline-block;
+}
+
+.brkpt-910-left {
+	display: inline-block;
+}
+
+.brkpt-910-right {
+	display: inline-block;
+}
+
+.logo {
+	background-image: url(img/logo.png);
+	background-repeat: no-repeat;
+	background-size: contain;
+	height: 43px; /*height of saved image*/
+	width: 306px; /*width of saved image*/
+}
+
+.lower-menu-bar {
+	margin-top: 13px;
+}
+
+.lower-menu-bar-dropdown-small {
+	display: none;
+}
+
+.lower-menu-bar-dropdown-large {
+	display: none;
+}
+
+.bottom-menu-btn {
+	text-decoration: none;
+	color: #000;
+	font-size: 15px;
+	font-weight: bold;
+	margin-right: 20px;
+}
+
+/****************************
+Main
+/****************************/
+
+main {
+	height: 470px;
+	background-image: url("img/aeroplane.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	margin-top: 20px;
+}
+
+.main-image-text {
+	color: #fff;
+	padding: 60px 0 10px;
+	text-align: center;
+	font-size: 70px;
+}
+
+.main-image-subtext {
+	color: #fff;
+	text-align: center;
+	font-size: 18px;
+}
+
+#shop-now-button {
+	width: 140px; /*Have to set width for margin auto to work*/
+	margin: 40px auto;
+	padding: 10px 15px;
+	font-size: 15px;
+	font-weight: bold;
+	text-align: center;
+	border: 3px solid #fff;
+}
+
+#shop-now-button a {
+	color: #fff;
+	text-decoration: none;
+}
+
+#shop-now-button:hover {
+	border: 1px solid #5B9EC0;
+	background-color: #5B9EC0;
+}
+
+/****************************
+Sections
+/****************************/
+
+.container {
+	margin: 0 auto;
+	width: 1200px; /*if set as % elements inside will stretch beyond the 1200px 'breakpoint'*/
+	overflow: auto;
+}
+
+/****************************
+Offers
+/****************************/
+
+.col-3 {
+	float: left;
+	width: 33.3%;
+	height: 240px;
+	margin: -170px 0 50px 0; /*could use minus % */
+	padding: 15px;
+}
+
+.offer {
+	height: 100%;
+	padding: 40px 0 0 20px;
+}
+
+.offer-headsets {
+	background-image: url("https://cdn.shopify.com/s/files/1/1634/8185/t/2/assets/custom_showcase1_img.jpg?950317520828846818");
+	background-size: 100% 100%;
+}
+
+.offer-lessons {
+	background-image: url("https://cdn.shopify.com/s/files/1/1634/8185/t/2/assets/custom_showcase2_img.jpg?950317520828846818");
+	background-size: 100% 100%;
+}
+
+.offer-gps {
+	background-image: url("https://cdn.shopify.com/s/files/1/1634/8185/t/2/assets/custom_showcase3_img.jpg?950317520828846818");
+	background-size: 100% 100%;
+}
+
+.overflow-visible {
+	overflow: visible;
+}
+
+.offer-heading {
+	color: #fff;
+	font-size: 40px;
+	font-weight: normal;
+	margin: 0;
+}
+
+.offer-subheading {
+	color: #fff;
+	font-size: 20px;
+	margin-top: 8px;
+	font-weight: normal;
+}
+
+.current-price {
+	color: #69A6C5;
+	font-weight: bold;
+	font-size: 18px;
+}
+
+.old-price {
+	text-decoration: line-through;
+}
+
+/****************************
+Products
+/****************************/
+
+h1 {
+	text-align: center;
+	font-size: 18px;
+	margin-bottom: 50px;
+}
+
+.col-4 {
+	float: left;
+	width: 25%;
+	height: 500px;
+	padding: 10px;
+}
+
+.product-image {
+	height: 335px; /*height of saved image*/
+	width: 270px; /*width of saved image*/
+	margin: 0 auto;
+}
+
+.headset {
+	background-image: url(img/headset2.png);
+	background-repeat: no-repeat;
+	background-size: contain;
+}
+
+.flight-jacket {
+	background-image: url(img/flight-jacket.png);
+	background-repeat: no-repeat;
+	background-size: contain;
+}
+
+.aviator-shades {
+	background-image: url(img/aviator-shades.png);
+	background-repeat: no-repeat;
+	background-size: contain;
+}
+
+.instruments {
+	background-image: url(img/instruments.png);
+	background-repeat: no-repeat;
+	background-size: contain;
+}
+
+.altimeter {
+	background-image: url(img/altimeter.png);
+	background-repeat: no-repeat;
+	background-size: contain;
+}
+
+.aviator-shades2 {
+	background-image: url(img/aviator-shades2.png);
+	background-repeat: no-repeat;
+	background-size: contain;
+}
+
+.headset3 {
+	background-image: url(img/headset3.png);
+	background-repeat: no-repeat;
+	background-size: contain;
+}
+
+.garmin {
+	background-image: url(img/garmin.png);
+	background-repeat: no-repeat;
+	background-size: contain;
+}
+
+.product-description {
+	padding: 10px 5px;
+	width: 270px;
+	margin: 0 auto;
+}
+
+.product-text-bold {
+	margin: 0;
+	text-align: center;
+	font-size: 13px;
+	font-weight: bold;
+	text-transform: uppercase;
+	margin-bottom: 3px;
+	padding: 0 12px;
+}
+
+.product-text-normal {
+	margin: 0;
+	text-align: center;
+	font-size: 13px;
+	font-weight: normal;
+	margin-bottom: 3px;
+	padding: 0 30px;
+}
+
+.product-cost {
+	text-align: center;
+	font-size: 13px;
+	margin: 20px 0;
+}
+
+/****************************
+Media Queries
+/****************************/
+
+@media screen and (max-width: 1250px) {
+	
+	.upper-nav-tabs {
+		width: 80%;
+		margin: 0 auto;
+	}
+	.lower-nav-tabs {
+		width: 80%;
+		margin: 0 auto;
+	}
+	main {
+		height: 400px;
+	}
+	.container {
+		width: 1000px;
+	}
+	.main-image-text {
+		padding: 60px 0 0;
+		text-align: center;
+		font-size: 60px;
+	}
+	.main-image-subtext {
+		font-size: 14px;
+	}
+	#shop-now-button {
+		margin: 20px auto;
+	}
+	.col-3 {
+		height: 160px;
+		margin: -140px 0 50px 0;
+		padding: 15px;
+	}
+	.offer {
+		padding: 40px 0 120px 20px;
+	}
+	.offer-heading {
+		font-size: 20px;
+	}
+	.offer-subheading {
+		font-size: 13px;
+		margin-top: 8px;
+	}
+	.col-4 {
+		float: left;
+		width: 33.3%;
+		height: 500px;
+		padding: 10px;
+	}
+}
+
+@media screen and (max-width: 1170px) {
+	
+	.lower-menu-bar {
+		display: none;
+	}
+	.lower-menu-bar-dropdown-small {
+		display: block;
+		float: right;
+		padding: 12px 9px;
+		font-size: 18px;
+		border: 2px solid #000;
+	}
+	.lower-menu-bar-dropdown-large {
+		margin-top: 20px;
+	}
+
+}
+
+@media screen and (max-width: 991px) {
+	
+	.container {
+		width: 800px;
+	}
+	.main-image-text {
+		font-size: 40px;
+	}
+	.main-image-subtext {
+		font-size: 12px;
+	}
+	.offer {
+		padding: 20px 0 120px 20px;
+	}
+	.offer-heading {
+		font-size: 18px;
+		margin-top: 3px;
+	}
+	.offer-subheading {
+		font-size: 11px;
+		margin-top: 4px;
+	}
+	.col-4 {
+		float: left;
+		width: 50%;
+		height: 500px;
+		padding: 10px;
+	}
+
+}
+
+@media screen and (max-width: 910px) {
+	
+	.lower-menu-bar-dropdown-small {
+		display: none;
+	}
+	.lower-menu-bar-dropdown-large {
+		display: block;
+		margin: 25px auto 0;
+		padding: 12px 9px;
+		font-size: 18px;
+		border: 2px solid #000;
+	}
+	.logo.float-left {
+		float: none;
+		margin: 0 auto;
+	}
+	.nav-products {
+		height: 175px;
+	}
+	.phone-number {
+		display: none;
+	}
+	.upper-menu-bar.float-right {
+		float: none;
+	}
+	.brkpt-910-center {
+		display: block;
+		margin: 0 auto;
+		text-align: center; /*inline elements are 'text'*/
+	}
+	.brkpt-910-left {
+		float: left;
+	}
+	.brkpt-910-right {
+		float: right;
+	}
+	
+}
+
+@media screen and (max-width: 767px) {
+	
+	.offer.offer-gps {
+		display: none;
+	}
+	.col-3 {
+		float: left;
+		width: 50%;
+		height: 240px;
+		margin: -170px 0 50px 0;
+		padding: 15px;
+	}
+	.offer {
+		height: 100%;
+		width: 85%;
+		padding: 40px 20px;
+	}
+}
+
+@media screen and (max-width: 600px) {
+	
+	.col-4 {
+		float: left;
+		width: 100%;
+		height: 500px;
+		padding: 10px;
+	}
+	.product-image {
+		margin: 0 auto;
+	}
+}
