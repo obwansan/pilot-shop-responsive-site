@@ -1,0 +1,11 @@
+{{#each products}}
+    <article class="col-4">
+        <div class="product-image">
+            <img src="{{this.image}}"/>
+        </div>
+        <div class="product-description">
+            <p class="product-text-bold">{{this.desc}}</p>
+            <p class="product-cost">From<span class="current-price">{{this.originalPrice}}</span><span class="old-price">{{this.originalPrice}}</span></p>
+        </div>
+    </article>
+{{/each}}
