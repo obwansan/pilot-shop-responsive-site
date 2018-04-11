@@ -1,6 +1,5 @@
 $.get('demo.hbs', function (data) {
     var source = data
-    console.log(data)
     var template = Handlebars.compile(source)
 
     var dataObject = {
@@ -70,7 +69,9 @@ $.get('demo.hbs', function (data) {
         ]
     }
 
-    var html = template(dataObject)
-    $('.appendProducts').append(html)
+    var outputHTML = template(dataObject)
+
+    // outputs each product, one for each loop of {{#each}}
+    $('.appendProducts').append(outputHTML)
 
 })
